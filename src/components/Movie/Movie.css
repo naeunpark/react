@@ -1,0 +1,45 @@
+.movie_card{
+  border: 1px solid #ccc;
+  width:33em;
+  height: 19em;
+  position: relative;
+  margin: 50px;
+  display: flex;
+}
+.movie_col{
+  width: 50%;
+  margin: 5px;
+  position: relative;
+}
+.movie_poster{
+  width:200px;
+  height: auto;
+  position: absolute;
+  top: -40px;
+  left: 30px;
+}
+.movie__title{
+  font-size: 20px;
+}
+.movie__summary{
+  color: #ccc;
+}
+@media (max-width: 500px) {
+ .movie_card{
+   display: grid;
+   grid-template-rows: 75% 25%;
+   width: 25em;
+   height: 25em;
+ }
+ .movie_col{
+   width: 100%;
+ }
+ .movie__summary{
+   display: none;
+ }
+ .movie__title{
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 1em;
+ }
+}
